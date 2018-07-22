@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../public/stylesheets/administrador.sass">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="log">
+      <div class="usuario">
+        <p>
+          Usuario
+        </p>
+        <input class="nombre" type="text">
+        <p>
+          Contraseña
+        </p>
+        <input class="contrasena" type="text">
+      </div>
+      <button onclick="login()">Iniciar Sesión
+      </button>
+    </div>
+    <div class="login">
+      
+    </div>
+  </header>
+  <div class="publicacion">
+    <h1>
+      Publica tu producto en sólo 3 pasos
+    </h1>
+    <h2>
+      (recuerda que para publicar, te debes logear)
+    </h2>
+    <p>
+      1. pega la url de la imagen del producto a continuación:
+    </p>
+    <input class="imagen" type="text">
+    <p>
+      2. Escribe el título del producto a continuación:
+    </p>
+    <input class="titulo" type="text">
+    <p>
+      3. ponle precio al producto a continuación:
+    </p>
+    <input class="precio" type="text">
+    <div>
+      <button onclick="publicar()">
+        Publicar
+      </button>
+    </div>
+  </div>
+  <div class="exito">
+    <h1>
+      Su publicación se realizó correctamente
+    </h1>
+    <a href="http://localhost:3000/productos">
+      <button>
+        Ver las publicaciones
+      </button>
+    </a>
+  </div>
+  <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/administrador.js"></script>
+</body>
+</html>
